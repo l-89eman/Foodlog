@@ -1,6 +1,3 @@
-<<<<<<< HEAD
+
 # Foodlog
-=======
-# README
-* ...
->>>>>>> 293a0c0 (initial commi
+Third Project 3-sep2024
