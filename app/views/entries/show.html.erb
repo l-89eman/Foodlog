@@ -1,0 +1,20 @@
+
+
+<% content_for :title do %>
+<%=@entry.meal_type %> &ndash; <%= DateTime.now.strftime('%B %d, %Y ') %> 
+<% end %>
+
+
+<%= render @entry %>
+
+<br>
+<div class="columns is-mobile">
+<div class="column">
+
+ <%= link_to "Edit ", edit_entry_path(@entry),class:"button is-gray"%> 
+  <%= link_to "Back ", entries_path,class:"button is-gray pl-4" %> <br>
+<%= link_to "Delete", @entry, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "button is-gray mt-3" %>
+
+
+</div>
+</div>
